@@ -15,7 +15,6 @@ class AppTheme {
         primary: primaryAccent,
         secondary: secondaryAccent,
         surface: cardBackground,
-        background: primaryBackground,
       ),
       cardTheme: CardThemeData(
         color: cardBackground,

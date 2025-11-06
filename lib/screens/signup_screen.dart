@@ -58,6 +58,16 @@ class _SignupScreenState extends State<SignupScreen> {
               key: _formKey,
               child: Column(
                 children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset(
+                      'assets/ChatGPT Image Nov 6, 2025, 06_32_06 PM.png',
+                      width: 100,
+                      height: 100,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const SizedBox(height: 24),
                   TextFormField(
                     controller: _usernameController,
                     decoration: const InputDecoration(

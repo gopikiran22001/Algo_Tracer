@@ -12,7 +12,13 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = context.watch<UserProvider>().user!;
+    final user = context.watch<UserProvider>().user;
+    
+    if (user == null) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
     final algorithms = AlgorithmModel.getAllAlgorithms();
     final categories = AlgorithmCategory.values;
 

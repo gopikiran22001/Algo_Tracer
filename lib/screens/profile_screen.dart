@@ -10,7 +10,14 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final userProvider = context.watch<UserProvider>();
-    final user = userProvider.user!;
+    final user = userProvider.user;
+    
+    if (user == null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Profile')),
+        body: const Center(child: CircularProgressIndicator()),
+      );
+    }
     final completedCount = user.progress.values.where((p) => p.completed).length;
 
     return Scaffold(

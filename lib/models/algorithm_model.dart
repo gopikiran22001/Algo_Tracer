@@ -74,6 +74,42 @@ class AlgorithmModel {
       xpReward: 80,
       icon: '🔄',
     ),
+    AlgorithmModel(
+      id: 'bubble_sort',
+      name: 'Bubble Sort',
+      description: 'Sort array by swapping adjacent elements',
+      category: AlgorithmCategory.arrays,
+      difficulty: 1,
+      xpReward: 100,
+      icon: '🫧',
+    ),
+    AlgorithmModel(
+      id: 'reverse_string',
+      name: 'Reverse String',
+      description: 'Reverse a string using two pointers',
+      category: AlgorithmCategory.strings,
+      difficulty: 1,
+      xpReward: 80,
+      icon: '↔️',
+    ),
+    AlgorithmModel(
+      id: 'valid_parentheses',
+      name: 'Valid Parentheses',
+      description: 'Check if brackets are balanced using stack',
+      category: AlgorithmCategory.dataStructures,
+      difficulty: 2,
+      xpReward: 120,
+      icon: '()',
+    ),
+    AlgorithmModel(
+      id: 'bfs',
+      name: 'BFS Traversal',
+      description: 'Breadth-first search through a graph',
+      category: AlgorithmCategory.graphs,
+      difficulty: 2,
+      xpReward: 150,
+      icon: '🌊',
+    ),
   ];
 
   static String getCategoryName(AlgorithmCategory category) {
