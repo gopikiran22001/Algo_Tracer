@@ -45,7 +45,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/WhatsApp Image 2025-11-06 at 17.53.42_ad24fda3.jpg"
+  image_path: "assets/ChatGPT Image Nov 6, 2025, 06_32_06 PM.png"
 
 
 
@@ -54,11 +54,9 @@ flutter_launcher_icons:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/ChatGPT Image Nov 6, 2025, 06_32_06 PM.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

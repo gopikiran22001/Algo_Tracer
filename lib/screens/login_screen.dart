@@ -57,13 +57,18 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    '🎯',
-                    style: TextStyle(fontSize: 80),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset(
+                      'assets/ChatGPT Image Nov 6, 2025, 06_32_06 PM.png',
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'AlgoTracer',
+                    'Algo Tracer',
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,

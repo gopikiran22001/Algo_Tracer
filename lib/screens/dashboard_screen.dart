@@ -18,7 +18,7 @@ class DashboardScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AlgoTracer'),
+        title: const Text('Algo Tracer'),
         actions: [
           IconButton(
             icon: const Icon(Icons.leaderboard),
